@@ -27,6 +27,20 @@ WHERE `area` >= 3000000 # 或用 HAVING
 ```
 <br/>
 
+####[1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
+```sql
+SELECT `author_id` `id` FROM `Views`
+WHERE author_id = viewer_id
+GROUP BY `id`
+ORDER BY `id`
+```
+```sql
+SELECT DISTINCT `author_id` `id` FROM `Views`
+WHERE `id` = `viewer_id`
+ORDER BY `id`
+```
+<br/>
+
 ####[1757. Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
 * Database
 ```sql
