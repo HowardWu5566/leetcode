@@ -27,6 +27,18 @@ WHERE `area` >= 3000000 # 或用 HAVING
 ```
 <br/>
 
+####[1683. Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
+```sql
+SELECT `tweet_id` FROM
+  (SELECT `tweet_id`, Length(content) FROM `Tweets`
+  WHERE Length(content) > 15) AS `filtered_tweets`
+```
+```sql
+SELECT `tweet_id` FROM `Tweets`
+WHERE Length(content) > 15
+```
+<br/>
+
 ####[1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
 ```sql
 SELECT `author_id` `id` FROM `Views`
