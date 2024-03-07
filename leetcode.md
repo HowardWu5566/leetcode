@@ -96,6 +96,21 @@ WHERE `area` >= 3000000 # 或用 HAVING
 
 
 
+####[620. Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT id, movie, description, rating
+FROM Cinema
+WHERE id % 2 = 1 # or HAVING
+  AND description != 'boring'
+ORDER BY rating DESC
+```
+<br/>
+
+
+
 ####[1068. Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -109,6 +124,22 @@ ON `Sales`.`product_id` = `Product`.`product_id`
 SELECT `product_name`, `year`, `price` FROM `Sales`
 LEFT JOIN `Product`
 USING (`product_id`)
+```
+<br/>
+
+
+
+####[1075. Project Employees I](https://leetcode.com/problems/project-employees-i/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT project_id, 
+  ROUND(AVG(experience_years), 2) AS average_years
+FROM Project p
+LEFT JOIN Employee e
+USING (employee_id)
+GROUP BY project_id
 ```
 <br/>
 
@@ -128,6 +159,42 @@ ORDER BY `id`
 SELECT DISTINCT `author_id` AS `id` FROM `Views`
 WHERE `id` = `viewer_id`
 ORDER BY `id`
+```
+<br/>
+
+
+
+####[1211. Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+# rating < 3 is boolean, and can be counted by SUM()
+SELECT query_name,
+  ROUND(AVG(rating / position), 2) AS quality,
+  ROUND(SUM(rating < 3) * 100 / COUNT(query_name), 2)
+  AS poor_query_percentage
+FROM Queries
+WHERE query_name IS NOT NULL
+GROUP BY query_name
+```
+<br/>
+
+
+
+####[1251. Average Selling Price](https://leetcode.com/problems/average-selling-price/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT p.product_id , 
+  COALESCE(ROUND(SUM(price * units)/SUM(units), 2), 0) AS average_price
+FROM Prices p
+LEFT JOIN UnitsSold u
+ON p.product_id = u.product_id 
+  AND p.start_date <= u.purchase_date 
+  AND u.purchase_date <= p.end_date
+GROUP BY p.product_id
 ```
 <br/>
 
@@ -208,6 +275,22 @@ WHERE NOT EXISTS (
 	WHERE t.visit_id = v.visit_id
 	)
 GROUP BY customer_id
+```
+<br/>
+
+
+
+####[1633. Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT contest_id,
+  ROUND(COUNT(contest_id)*100/(SELECT COUNT(user_id)FROM Users),2)
+  AS percentage # COUNT(DISTINCT user_id)*100/... is better
+FROM Register 
+GROUP BY contest_id
+ORDER BY percentage DESC, contest_id ASC
 ```
 <br/>
 
