@@ -19,6 +19,52 @@ WHERE w1.temperature > w2.temperature
 
 
 
+####[570. Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT managers.name
+FROM Employee managers
+LEFT JOIN Employee reports # INNER JOIN
+  ON managers.id = reports.managerId
+GROUP BY managers.id
+HAVING COUNT(reports.managerId) >= 5
+```
+```sql
+# another way using 'IN'
+SELECT name 
+FROM Employee 
+WHERE id IN (
+    SELECT managerId 
+    FROM Employee 
+    GROUP BY managerId 
+    HAVING COUNT(*) >= 5)
+```
+<br/>
+
+
+
+####[577. Employee Bonus](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT e.name, b.bonus FROM Employee e
+LEFT JOIN Bonus b
+USING (empId) # Don't forget ()
+WHERE COALESCE(b.bonus, 0) < 1000
+
+
+SELECT e.name, b.bonus FROM Employee e
+LEFT JOIN Bonus b
+ON e.empId = b.empId
+WHERE COALESCE(b.bonus, 0) < 1000
+```
+<br/>
+
+
+
 ####[584. Find Customer Referee](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -57,12 +103,12 @@ WHERE `area` >= 3000000 # 或用 HAVING
 ```sql
 SELECT `product_name`, `year`, `price` FROM `Sales`
 LEFT JOIN `Product`
-USING (`product_id`)
+ON `Sales`.`product_id` = `Product`.`product_id`
 ```
 ```sql
 SELECT `product_name`, `year`, `price` FROM `Sales`
 LEFT JOIN `Product`
-ON `Sales`.`product_id` = `Product`.`product_id`
+USING (`product_id`)
 ```
 <br/>
 
@@ -79,12 +125,30 @@ GROUP BY `id`
 ORDER BY `id`
 ```
 ```sql
-SELECT DISTINCT `author_id` `id` FROM `Views`
+SELECT DISTINCT `author_id` AS `id` FROM `Views`
 WHERE `id` = `viewer_id`
 ORDER BY `id`
 ```
 <br/>
 
+
+
+####[1280. Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT st.student_id, st.student_name, sub.subject_name,
+  COUNT(e.subject_name) AS attended_exams
+FROM Students st
+CROSS JOIN Subjects sub
+LEFT JOIN Examinations e 
+  ON st.student_id = e.student_id
+  AND sub.subject_name = e.subject_name
+GROUP BY student_id, subject_name
+ORDER BY student_id, subject_name
+```
+<br/>
 
 
 ####[1378. Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/description/?envType=study-plan-v2&envId=top-sql-50)
@@ -122,7 +186,7 @@ SELECT v.customer_id , COUNT(v.visit_id) AS count_no_trans
 FROM Visits v
 LEFT JOIN Transactions t
 ON v.visit_id = t.visit_id
-WHERE t.amount IS NULL # Sometimes wrong
+WHERE t.amount IS NULL # May error when 1 visitor have several transactions
 GROUP BY v.customer_id
 ```
 [Note](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/solutions/3500258/full-explanation-unlike-any-others-where-they-only-provide-the-solution)
@@ -200,3 +264,21 @@ WHERE Length(content) > 15
 SELECT `product_id` FROM `Products`
 WHERE `low_fats` = 'Y' AND `recyclable` = 'Y';
 ```
+<br/>
+
+
+
+####[1934. Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT s.user_id ,
+  ROUND(AVG(IF(c.action = 'confirmed', 1, 0)), 2) 
+  AS confirmation_rate
+FROM Signups s
+LEFT JOIN Confirmations c
+  USING(user_id)
+GROUP BY c.user_id
+```
+<br/>
