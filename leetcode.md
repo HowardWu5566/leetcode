@@ -164,6 +164,24 @@ ORDER BY `id`
 
 
 
+####[1193. Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT DATE_FORMAT(trans_date, "%Y-%m") AS month,
+  country,
+  COUNT(id) AS trans_count,
+  SUM(state = "approved") AS approved_count,
+  SUM(amount) AS trans_total_amount,
+  SUM(CASE WHEN state = "approved" then amount else 0 END) AS approved_total_amount
+FROM `Transactions`
+GROUP BY month, country
+```
+<br/>
+
+
+
 ####[1211. Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
