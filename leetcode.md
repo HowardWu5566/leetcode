@@ -19,6 +19,38 @@ WHERE w1.temperature > w2.temperature
 
 
 
+####[550. Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+# not pass QQ
+SELECT ROUND(AVG(day2 IS NOT null), 2) AS fraction
+FROM (
+    SELECT a1.player_id, a1.event_date, a2.event_date AS day2
+    FROM Activity a1
+    LEFT JOIN Activity a2
+    ON a1.player_id = a2.player_id
+    AND a2.event_date = DATE_ADD(a1.event_date, INTERVAL 1 DAY)
+    GROUP BY player_id
+) AS data
+```
+```sql
+SELECT
+  ROUND(COUNT(DISTINCT player_id) / (SELECT COUNT(DISTINCT player_id) FROM Activity), 2) AS fraction
+FROM Activity
+WHERE
+  (player_id, DATE_SUB(event_date, INTERVAL 1 DAY))
+  IN (
+    SELECT player_id, MIN(event_date) AS first_login 
+    FROM Activity 
+    GROUP BY player_id
+  )
+```
+<br/>
+
+
+
 ####[570. Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -160,6 +192,26 @@ SELECT DISTINCT `author_id` AS `id` FROM `Views`
 WHERE `id` = `viewer_id`
 ORDER BY `id`
 ```
+<br/>
+
+
+
+####[1174. Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT ROUND(AVG(order_date = customer_pref_delivery_date)*100, 2)
+  AS immediate_percentage
+FROM Delivery
+WHERE (customer_id, order_date) IN (
+  SELECT customer_id,
+    MIN(order_date)
+  FROM Delivery
+  GROUP BY customer_id
+)
+```
+[IN (SELECT)](https://www.w3schools.com/sql/sql_in.asp)
 <br/>
 
 
