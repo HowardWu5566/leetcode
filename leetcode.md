@@ -177,6 +177,28 @@ GROUP BY project_id
 
 
 
+####[1141. User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* 
+
+```sql
+SELECT activity_date AS day,
+  COUNT(DISTINCT user_id) AS active_users
+FROM Activity
+WHERE activity_date > "2019-06-27"
+  AND activity_date <= "2019-07-27"
+GROUP BY activity_date
+
+SELECT activity_date AS day,
+  COUNT(DISTINCT user_id) AS active_users
+FROM Activity
+WHERE activity_date BETWEEN DATE_SUB('2019-07-27', INTERVAL 29 DAY) AND '2019-07-27'
+GROUP BY activity_date
+```
+<br/>
+
+
+
 ####[1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -433,5 +455,18 @@ FROM Signups s
 LEFT JOIN Confirmations c
   USING(user_id)
 GROUP BY c.user_id
+```
+<br/>
+
+
+
+####[2356. Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT teacher_id, COUNT(DISTINCT subject_id) AS cnt
+FROM Teacher
+GROUP BY teacher_id
 ```
 <br/>
