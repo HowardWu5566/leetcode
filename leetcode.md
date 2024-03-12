@@ -1,11 +1,11 @@
-###Note
+### Note
 
 [COALESCE](https://www.w3schools.com/sql/func_mysql_coalesce.asp) 回傳第一個非 NULL 的值
 [HAVING](https://www.w3schools.com/sql/sql_having.asp) : WHERE無法用於 aggregate functions ( AVG()、COUNT()、MAX()、MIN()、SUM() 等 )
 
 ---
 
-####[197. Rising Temperature](https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -19,7 +19,7 @@ WHERE w1.temperature > w2.temperature
 
 
 
-####[550. Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [550. Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -51,7 +51,7 @@ WHERE
 
 
 
-####[570. Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [570. Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -77,7 +77,7 @@ WHERE id IN (
 
 
 
-####[577. Employee Bonus](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [577. Employee Bonus](https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -97,7 +97,7 @@ WHERE COALESCE(b.bonus, 0) < 1000
 
 
 
-####[584. Find Customer Referee](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [584. Find Customer Referee](https://leetcode.com/problems/find-customer-referee/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -115,7 +115,7 @@ WHERE COALESCE(`referee_id`, 0) != 2;
 
 
 
-####[595. Big Countries](https://leetcode.com/problems/big-countries/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [595. Big Countries](https://leetcode.com/problems/big-countries/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -128,7 +128,47 @@ WHERE `area` >= 3000000 # 或用 HAVING
 
 
 
-####[620. Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [596. Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5;
+
+
+SELECT class
+FROM (
+  SELECT class, COUNT(student) AS amount
+  FROM Courses
+  GROUP BY class
+) student_amount
+WHERE amount >= 5
+```
+<br/>
+
+
+
+#### [619. Biggest Single Number](https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT MAX(num) AS num
+FROM (
+  SELECT num
+  FROM MyNumbers
+  GROUP BY num
+  HAVING COUNT(num) = 1
+) singleNum
+```
+<br/>
+
+
+
+#### [620. Not Boring Movies](https://leetcode.com/problems/not-boring-movies/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -143,7 +183,24 @@ ORDER BY rating DESC
 
 
 
-####[1068. Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1045. Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT customer_id
+FROM Customer
+GROUP BY customer_id
+HAVING COUNT(DISTINCT product_key) = (
+  SELECT COUNT(product_key) AS amount
+  FROM Product
+)
+```
+<br/>
+
+
+
+#### [1068. Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -161,7 +218,27 @@ USING (`product_id`)
 
 
 
-####[1075. Project Employees I](https://leetcode.com/problems/project-employees-i/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1070. Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT product_id,
+  year AS first_year,
+  quantity,
+  price
+FROM Sales
+WHERE (product_id, year) IN (
+  SELECT product_id, MIN(year)
+  FROM Sales
+  GROUP BY product_id
+)
+```
+<br/>
+
+
+
+#### [1075. Project Employees I](https://leetcode.com/problems/project-employees-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -177,7 +254,7 @@ GROUP BY project_id
 
 
 
-####[1141. User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1141. User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * 
 
@@ -199,7 +276,7 @@ GROUP BY activity_date
 
 
 
-####[1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1148. Article Views I](https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -218,7 +295,7 @@ ORDER BY `id`
 
 
 
-####[1174. Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1174. Immediate Food Delivery II](https://leetcode.com/problems/immediate-food-delivery-ii/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -238,7 +315,7 @@ WHERE (customer_id, order_date) IN (
 
 
 
-####[1193. Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1193. Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -256,7 +333,7 @@ GROUP BY month, country
 
 
 
-####[1211. Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1211. Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -274,7 +351,7 @@ GROUP BY query_name
 
 
 
-####[1251. Average Selling Price](https://leetcode.com/problems/average-selling-price/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1251. Average Selling Price](https://leetcode.com/problems/average-selling-price/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -292,7 +369,7 @@ GROUP BY p.product_id
 
 
 
-####[1280. Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1280. Students and Examinations](https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -310,7 +387,7 @@ ORDER BY student_id, subject_name
 <br/>
 
 
-####[1378. Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1378. Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -328,7 +405,7 @@ ON `Employees`.`id` = `EmployeeUNI`.`id`
 
 
 
-####[1581. Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1581. Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -372,7 +449,7 @@ GROUP BY customer_id
 
 
 
-####[1633. Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1633. Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -388,7 +465,7 @@ ORDER BY percentage DESC, contest_id ASC
 
 
 
-####[1661. Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1661. Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Datebase
 
@@ -414,7 +491,7 @@ GROUP BY a1.machine_id
 
 
 
-####[1683. Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1683. Invalid Tweets](https://leetcode.com/problems/invalid-tweets/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -431,7 +508,22 @@ WHERE Length(content) > 15
 
 
 
-####[1757. Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
+#### [1729. Find Followers Count](https://leetcode.com/problems/find-followers-count/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT user_id,
+  COUNT(user_id) AS followers_count
+FROM Followers
+GROUP BY user_id
+ORDER BY user_id
+```
+<br/>
+
+
+
+#### [1757. Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -443,7 +535,7 @@ WHERE `low_fats` = 'Y' AND `recyclable` = 'Y';
 
 
 
-####[1934. Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [1934. Confirmation Rate](https://leetcode.com/problems/confirmation-rate/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
@@ -460,7 +552,7 @@ GROUP BY c.user_id
 
 
 
-####[2356. Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50)
+#### [2356. Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
 
