@@ -151,6 +151,24 @@ WHERE amount >= 5
 
 
 
+#### [610. Triangle Judgement](https://leetcode.com/problems/triangle-judgement/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT *,
+  CASE WHEN x + y > z
+    AND y + z > x
+    AND z + x > y
+    THEN "Yes"
+    ELSE "No"
+  END AS triangle
+FROM Triangle
+```
+<br/>
+
+
+
 #### [619. Biggest Single Number](https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -523,6 +541,25 @@ ORDER BY user_id
 
 
 
+#### [1731. The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT DISTINCT manager.employee_id,
+  manager.name,
+  COUNT(manager.employee_id) AS reports_count,
+  ROUND(AVG(reporter.age) , 0) AS average_age
+FROM Employees reporter
+INNER JOIN  Employees manager
+ON reporter.reports_to = manager.employee_id
+GROUP BY manager.employee_id
+ORDER BY manager.employee_id
+```
+<br/>
+
+
+
 #### [1757. Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -530,6 +567,25 @@ ORDER BY user_id
 ```sql
 SELECT `product_id` FROM `Products`
 WHERE `low_fats` = 'Y' AND `recyclable` = 'Y';
+```
+<br/>
+
+
+
+#### [1789. Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT employee_id, department_id 
+FROM Employee
+WHERE primary_flag = "Y"
+OR employee_id IN (
+  SELECT employee_id
+  FROM Employee
+  GROUP BY employee_id
+  HAVING COUNT(employee_id) = 1
+)
 ```
 <br/>
 
