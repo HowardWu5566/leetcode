@@ -5,6 +5,27 @@
 
 ---
 
+#### [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT DISTINCT c.num AS ConsecutiveNums
+FROM (
+  SELECT id, 
+    num, 
+    LEAD(num, 1)OVER() AS num2, 
+    LEAD(num, 2)OVER() AS num3
+  FROM Logs
+) c
+WHERE c.num = c.num2 AND c.num2 = c.num3
+```
+[LEAD](https://www.begtut.com/mysql/mysql-lead-function.html)
+
+<br/>
+
+
+
 #### [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -308,6 +329,43 @@ ORDER BY `id`
 SELECT DISTINCT `author_id` AS `id` FROM `Views`
 WHERE `id` = `viewer_id`
 ORDER BY `id`
+```
+<br/>
+
+
+
+#### [1164. Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT product_id, new_price AS price
+FROM Products
+WHERE (product_id, change_date) IN (
+  SELECT product_id,
+  MAX(change_date)
+  FROM Products
+  WHERE change_date <= "2019-08-16"
+  GROUP BY product_id
+) 
+UNION
+SELECT product_id, 10
+FROM Products
+WHERE Product_id NOT IN (
+  SELECT DISTINCT product_id
+  FROM Products
+  WHERE change_date <= "2019-08-16"
+)
+```
+```sql
+SELECT DISTINCT product_id,
+  COALESCE((SELECT new_price FROM (
+    SELECT * FROM products p3 
+    WHERE change_date <= '2019-08-16' 
+      AND p3.product_id = p2.product_id
+  ) p1
+  ORDER BY change_date DESC LIMIT 1), 10) AS price
+FROM products p2;
 ```
 <br/>
 
