@@ -409,6 +409,33 @@ GROUP BY month, country
 
 
 
+#### [1204. Last Person to Fit in the Bus](https://leetcode.com/problems/last-person-to-fit-in-the-bus/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT person_name
+FROM (
+    SELECT person_name,
+    SUM(weight) OVER(ORDER BY turn) AS accu_weight
+    FROM Queue
+    ORDER BY accu_weight DESC
+) accu
+WHERE accu.accu_weight <= 1000
+LIMIT 1
+```
+```sql
+SELECT q1.person_name
+FROM Queue q1 JOIN Queue q2 ON q1.turn >= q2.turn
+GROUP BY q1.turn
+HAVING SUM(q2.weight) <= 1000
+ORDER BY SUM(q2.weight) DESC
+LIMIT 1
+```
+<br/>
+
+
+
 #### [1211. Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -645,6 +672,30 @@ OR employee_id IN (
   HAVING COUNT(employee_id) = 1
 )
 ```
+<br/>
+
+
+
+#### [1907. Count Salary Categories](https://leetcode.com/problems/count-salary-categories/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT "Low Salary" AS category,
+    SUM(income < 20000) AS accounts_count
+FROM Accounts
+UNION
+SELECT "Average Salary",
+    SUM(income >= 20000 AND income <= 50000) 
+    AS accounts_count
+FROM Accounts
+UNION
+SELECT "High Salary",
+    SUM(income >50000) 
+    AS accounts_count
+FROM Accounts
+```
+[UNION ALL](https://www.w3schools.com/sql/sql_ref_union_all.asp)
 <br/>
 
 
