@@ -717,6 +717,33 @@ GROUP BY c.user_id
 
 
 
+#### [1978. Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT reporter.employee_id
+FROM Employees reporter
+LEFT JOIN Employees manager
+ON reporter.manager_id = manager.employee_id
+WHERE reporter.salary < 30000
+  AND reporter.manager_id IS NOT NULL
+  AND manager.employee_id IS NULL
+ORDER BY reporter.employee_id
+```
+```sql
+SELECT employee_id
+FROM Employees
+WHERE salary < 30000
+AND manager_id NOT IN (
+  SELECT employee_id FROM Employees
+)
+ORDER BY employee_id
+```
+<br/>
+
+
+
 #### [2356. Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
