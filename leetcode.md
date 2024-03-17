@@ -222,6 +222,24 @@ ORDER BY rating DESC
 
 
 
+#### [626. Exchange Seats](https://leetcode.com/problems/exchange-seats/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT CASE 
+    WHEN id % 2 AND id = (SELECT MAX(id) FROM Seat) THEN id
+    WHEN id % 2 THEN id + 1
+    ELSE id - 1 END
+  AS id,
+  student
+FROM Seat
+ORDER BY id
+```
+<br/>
+
+
+
 #### [1045. Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -486,6 +504,34 @@ LEFT JOIN Examinations e
   AND sub.subject_name = e.subject_name
 GROUP BY student_id, subject_name
 ORDER BY student_id, subject_name
+```
+<br/>
+
+
+
+#### [1341. Movie Rating](https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+(SELECT u.name AS results
+FROM MovieRating mr
+LEFT JOIN Users u
+USING(user_id)
+GROUP BY mr.user_id
+ORDER BY COUNT(mr.movie_id) DESC, u.name
+LIMIT 1)
+
+UNION ALL
+
+(SELECT m.title AS results
+FROM MovieRating mr
+LEFT JOIN Movies m
+USING(movie_id)
+WHERE DATE_FORMAT(created_at, "%Y-%m") = "2020-02"
+GROUP BY mr.movie_id
+ORDER BY AVG(rating) DESC, title
+LIMIT 1)
 ```
 <br/>
 
