@@ -136,6 +136,42 @@ WHERE COALESCE(`referee_id`, 0) != 2;
 
 
 
+#### [585. Investments in 2016](https://leetcode.com/problems/investments-in-2016/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
+FROM Insurance i1
+WHERE tiv_2015 IN (
+    SELECT tiv_2015 FROM Insurance i2
+    WHERE i1.pid != i2.pid
+)
+AND (lat, lon) NOT IN (
+    SELECT lat, lon FROM Insurance i3
+    WHERE i1.pid != i3.pid
+)
+```
+```sql
+SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
+FROM Insurance
+WHERE tiv_2015 IN (
+    SELECT tiv_2015
+    FROM Insurance
+    GROUP BY tiv_2015
+    HAVING COUNT(pid) > 1
+)
+AND (lat, lon) IN (
+    SELECT lat, lon
+    FROM Insurance
+    GROUP BY lat, lon
+    HAVING COUNT(pid) = 1
+)
+```
+<br/>
+
+
+
 #### [595. Big Countries](https://leetcode.com/problems/big-countries/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -167,6 +203,31 @@ FROM (
   GROUP BY class
 ) student_amount
 WHERE amount >= 5
+```
+<br/>
+
+
+
+#### [602. Friend Requests II: Who Has the Most Friends](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT id, SUM(num) AS num
+FROM (
+  SELECT requester_id AS id,
+    COUNT(requester_id) AS num
+  FROM RequestAccepted
+  GROUP BY id
+  UNION ALL
+  SELECT accepter_id AS id, 
+    COUNT(accepter_id) AS num
+  FROM RequestAccepted
+  GROUP BY id
+) t
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1
 ```
 <br/>
 
@@ -504,6 +565,33 @@ LEFT JOIN Examinations e
   AND sub.subject_name = e.subject_name
 GROUP BY student_id, subject_name
 ORDER BY student_id, subject_name
+```
+<br/>
+
+
+
+#### [1321. Restaurant Growth](https://leetcode.com/problems/restaurant-growth/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT visited_on,
+  (
+    SELECT SUM(amount)
+    FROM customer
+    WHERE visited_on BETWEEN DATE_SUB(c.visited_on, INTERVAL 6 DAY) AND c.visited_on
+  ) AS amount,
+  ROUND((
+    SELECT SUM(amount) / 7
+    FROM customer
+    WHERE visited_on BETWEEN DATE_SUB(c.visited_on, INTERVAL 6 DAY) AND c.visited_on), 2
+  ) AS average_amount
+FROM customer c
+WHERE visited_on >= (
+    SELECT DATE_ADD(MIN(visited_on), INTERVAL 6 DAY)
+    FROM customer
+  ) # 6天前有資料
+GROUP BY visited_on
 ```
 <br/>
 
