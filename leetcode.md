@@ -26,6 +26,65 @@ WHERE c.num = c.num2 AND c.num2 = c.num3
 
 
 
+#### [185. Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT d.name AS Department, 
+e.name AS employee, 
+e.salary AS Salary
+FROM Employee e
+LEFT JOIN Department d
+ON e.departmentId = d.id
+WHERE e.id IN (
+  SELECT r.id
+  FROM (
+    SELECT e2.id,
+    DENSE_RANK() OVER(
+    PARTITION BY departmentId
+    ORDER BY departmentId, salary DESC
+    ) AS ranking
+    FROM Employee e2
+  ) r
+  WHERE r.ranking <=3
+)
+#ORDER BY e.departmentId, e.salary DESC
+```
+```sql
+SELECT Department, Employee, Salary
+FROM (
+  SELECT 
+    d.name AS Department,
+    e.name AS Employee,
+    e.salary AS Salary,
+    DENSE_RANK() OVER (PARTITION BY d.name ORDER BY Salary DESC) AS rnk
+  FROM Employee e
+  JOIN Department d
+  ON e.departmentId = d.id
+) AS rnk_tbl
+WHERE rnk <= 3
+```
+```sql
+# 直接數同部門中有幾人薪水更高
+SELECT d.name AS Department, 
+e1.name AS Employee, 
+e1.salary AS Salary 
+FROM Employee e1 
+INNER JOIN Department d 
+ON e1.departmentId = d.id 
+WHERE 3 > (
+  SELECT COUNT(DISTINCT(e2.Salary)) 
+  FROM Employee e2 
+  WHERE e2.Salary > e1.Salary AND 
+  e1.departmentId = e2.departmentId
+)
+```
+[Window Function (PARTITION BY, RNAK, DENSE RANK...)](https://haosquare.com/sql-window-function-intro/)
+<br/>
+
+
+
 #### [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -48,12 +107,12 @@ WHERE w1.temperature > w2.temperature
 # not pass QQ
 SELECT ROUND(AVG(day2 IS NOT null), 2) AS fraction
 FROM (
-    SELECT a1.player_id, a1.event_date, a2.event_date AS day2
-    FROM Activity a1
-    LEFT JOIN Activity a2
-    ON a1.player_id = a2.player_id
-    AND a2.event_date = DATE_ADD(a1.event_date, INTERVAL 1 DAY)
-    GROUP BY player_id
+  SELECT a1.player_id, a1.event_date, a2.event_date AS day2
+  FROM Activity a1
+  LEFT JOIN Activity a2
+  ON a1.player_id = a2.player_id
+  AND a2.event_date = DATE_ADD(a1.event_date, INTERVAL 1 DAY)
+  GROUP BY player_id
 ) AS data
 ```
 ```sql
@@ -89,10 +148,10 @@ HAVING COUNT(reports.managerId) >= 5
 SELECT name 
 FROM Employee 
 WHERE id IN (
-    SELECT managerId 
-    FROM Employee 
-    GROUP BY managerId 
-    HAVING COUNT(*) >= 5)
+  SELECT managerId 
+  FROM Employee 
+  GROUP BY managerId 
+  HAVING COUNT(*) >= 5)
 ```
 <br/>
 
@@ -144,28 +203,28 @@ WHERE COALESCE(`referee_id`, 0) != 2;
 SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
 FROM Insurance i1
 WHERE tiv_2015 IN (
-    SELECT tiv_2015 FROM Insurance i2
-    WHERE i1.pid != i2.pid
+  SELECT tiv_2015 FROM Insurance i2
+  WHERE i1.pid != i2.pid
 )
 AND (lat, lon) NOT IN (
-    SELECT lat, lon FROM Insurance i3
-    WHERE i1.pid != i3.pid
+  SELECT lat, lon FROM Insurance i3
+  WHERE i1.pid != i3.pid
 )
 ```
 ```sql
 SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
 FROM Insurance
 WHERE tiv_2015 IN (
-    SELECT tiv_2015
-    FROM Insurance
-    GROUP BY tiv_2015
-    HAVING COUNT(pid) > 1
+  SELECT tiv_2015
+  FROM Insurance
+  GROUP BY tiv_2015
+  HAVING COUNT(pid) > 1
 )
 AND (lat, lon) IN (
-    SELECT lat, lon
-    FROM Insurance
-    GROUP BY lat, lon
-    HAVING COUNT(pid) = 1
+  SELECT lat, lon
+  FROM Insurance
+  GROUP BY lat, lon
+  HAVING COUNT(pid) = 1
 )
 ```
 <br/>
@@ -216,12 +275,12 @@ WHERE amount >= 5
 SELECT id, SUM(num) AS num
 FROM (
   SELECT requester_id AS id,
-    COUNT(requester_id) AS num
+  COUNT(requester_id) AS num
   FROM RequestAccepted
   GROUP BY id
   UNION ALL
   SELECT accepter_id AS id, 
-    COUNT(accepter_id) AS num
+  COUNT(accepter_id) AS num
   FROM RequestAccepted
   GROUP BY id
 ) t
@@ -289,11 +348,11 @@ ORDER BY rating DESC
 
 ```sql
 SELECT CASE 
-    WHEN id % 2 AND id = (SELECT MAX(id) FROM Seat) THEN id
-    WHEN id % 2 THEN id + 1
-    ELSE id - 1 END
-  AS id,
-  student
+  WHEN id % 2 AND id = (SELECT MAX(id) FROM Seat) THEN id
+  WHEN id % 2 THEN id + 1
+  ELSE id - 1 END
+AS id,
+student
 FROM Seat
 ORDER BY id
 ```
@@ -495,10 +554,10 @@ GROUP BY month, country
 ```sql
 SELECT person_name
 FROM (
-    SELECT person_name,
-    SUM(weight) OVER(ORDER BY turn) AS accu_weight
-    FROM Queue
-    ORDER BY accu_weight DESC
+  SELECT person_name,
+  SUM(weight) OVER(ORDER BY turn) AS accu_weight
+  FROM Queue
+  ORDER BY accu_weight DESC
 ) accu
 WHERE accu.accu_weight <= 1000
 LIMIT 1
@@ -588,8 +647,8 @@ SELECT visited_on,
   ) AS average_amount
 FROM customer c
 WHERE visited_on >= (
-    SELECT DATE_ADD(MIN(visited_on), INTERVAL 6 DAY)
-    FROM customer
+  SELECT DATE_ADD(MIN(visited_on), INTERVAL 6 DAY)
+  FROM customer
   ) # 6天前有資料
 GROUP BY visited_on
 ```
@@ -638,6 +697,27 @@ SELECT `unique_id`, `name` FROM `Employees`
 LEFT JOIN `EmployeeUNI`
 ON `Employees`.`id` = `EmployeeUNI`.`id`
 ```
+<br/>
+
+
+
+#### [1527. Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT *
+FROM Patients
+WHERE conditions LIKE "DIAB1%" 
+  OR conditions LIKE "% DIAB1%"
+```
+```sql
+SELECT * 
+FROM Patients 
+WHERE conditions REGEXP "\\bDIAB1"
+# \b 表示文字/數字的邊界
+```
+[\b](https://stackoverflow.com/questions/6664151/difference-between-b-and-b-in-regex)
 <br/>
 
 
@@ -724,6 +804,22 @@ GROUP BY a1.machine_id
 | 1          | 0          | start         | 0.55      | end           | 1.55      |
 | 2          | 0          | start         | 4.1       | end           | 4.512     |
 
+<br/>
+
+
+
+#### [1667. Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT user_id,
+CONCAT(
+  UCASE(LEFT(name, 1)), LCASE(SUBSTRING(name, 2)) # or UPPER, LOWER
+) AS name
+FROM Users
+ORDER BY user_id
+```
 <br/>
 
 
@@ -816,17 +912,17 @@ OR employee_id IN (
 
 ```sql
 SELECT "Low Salary" AS category,
-    SUM(income < 20000) AS accounts_count
+  SUM(income < 20000) AS accounts_count
 FROM Accounts
 UNION
 SELECT "Average Salary",
-    SUM(income >= 20000 AND income <= 50000) 
-    AS accounts_count
+  SUM(income >= 20000 AND income <= 50000) 
+  AS accounts_count
 FROM Accounts
 UNION
 SELECT "High Salary",
-    SUM(income >50000) 
-    AS accounts_count
+  SUM(income >50000) 
+  AS accounts_count
 FROM Accounts
 ```
 [UNION ALL](https://www.w3schools.com/sql/sql_ref_union_all.asp)
