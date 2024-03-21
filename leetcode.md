@@ -5,6 +5,39 @@
 
 ---
 
+#### [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT CASE
+  WHEN EXISTS (
+    SELECT DISTINCT salary
+    FROM Employee
+    ORDER BY salary DESC
+    LIMIT 1
+    OFFSET 1
+  ) THEN (
+    SELECT DISTINCT salary AS SecondHighestSalary
+    FROM Employee
+    ORDER BY salary DESC
+    LIMIT 1 OFFSET 1
+  ) 
+  ELSE null
+END AS SecondHighestSalary
+```
+```sql
+SELECT (
+  SELECT DISTINCT Salary 
+  FROM Employee ORDER BY salary DESC 
+  LIMIT 1 OFFSET 1
+) AS SecondHighestSalary
+# SELECT 沒有 row 的表會得到 null
+```
+<br/>
+
+
+
 #### [180. Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -81,6 +114,19 @@ WHERE 3 > (
 )
 ```
 [Window Function (PARTITION BY, RNAK, DENSE RANK...)](https://haosquare.com/sql-window-function-intro/)
+<br/>
+
+
+
+#### [196. Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+DELETE p1 from person p1, person p2 
+WHERE p1.email = p2.email 
+  AND p1.id > p2.id
+```
 <br/>
 
 
@@ -656,6 +702,35 @@ GROUP BY visited_on
 
 
 
+#### [1327. List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT p.product_name, t.unit
+FROM (
+  SELECT product_id, SUM(unit) AS unit
+  FROM Orders
+  WHERE DATE_FORMAT(order_date , '%Y-%m') = '2020-02'
+  GROUP BY product_id
+) t
+LEFT JOIN Products p
+USING(product_id)
+WHERE t.unit >= 100
+```
+```sql
+SELECT p.product_name AS product_name,
+  SUM(o.unit) AS unit 
+FROM Products p
+LEFT JOIN Orders o USING(product_id)
+WHERE YEAR(o.order_date)='2020' AND MONTH(o.order_date)='02'
+GROUP BY p.product_id
+HAVING SUM(o.unit)>=100
+```
+<br/>
+
+
+
 #### [1341. Movie Rating](https://leetcode.com/problems/movie-rating/description/?envType=study-plan-v2&envId=top-sql-50)
 
 * Database
@@ -696,6 +771,40 @@ USING (`id`)
 SELECT `unique_id`, `name` FROM `Employees`
 LEFT JOIN `EmployeeUNI`
 ON `Employees`.`id` = `EmployeeUNI`.`id`
+```
+<br/>
+
+
+
+#### [1484. Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/description/?envType=study-plan-v2&envId=top-sql-50)
+
+* Database
+
+```sql
+SELECT sell_date,
+  COUNT(DISTINCT product) AS num_sold,
+  GROUP_CONCAT(DISTINCT product ORDER BY product) AS products
+FROM Activities
+GROUP BY sell_date
+```
+[GROUP_CONCAT](https://www.yiibai.com/mysql/group_concat.html)
+<br/>
+
+
+
+#### [1517. Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/description/)
+
+* Database
+
+```sql
+SELECT user_id, name, mail
+FROM Users
+WHERE mail REGEXP '^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\.com$'
+
+# 也可以用 [] 把 . 包起來
+SELECT user_id, name, mail
+FROM Users
+WHERE mail REGEXP '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode[.]com$'
 ```
 <br/>
 
