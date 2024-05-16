@@ -1,6 +1,7 @@
 |#|Title|Difficulty|Topics|Solution|
 |-|-|-|-|-|
 |0001|[Two Sum](https://leetcode.com/problems/two-sum/)|Easy|Array, Hash Table|[JS](./0xxx/00xx/0001.js), [TS](./0xxx/00xx/0001.ts)|
+|0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|Two Pointers, String|[JS](./0xxx/01xx/012x/0125.js), [TS](./0xxx/01xx/012x/0125.ts)|
 |0176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|Medium|Database|[SQL](./0xxx/01xx/017x/0176.md)|
 |0180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)|Medium|Database|[SQL](./0xxx/01xx/018x/0180.md)|
 |0185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)|Hard|Database|[SQL](./0xxx/01xx/018x/0185.md)|
@@ -53,4 +54,3 @@
 |1934|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/)|Medium|Database|[SQL](./1xxx/19xx/193x/1934.md)|
 |1978|[Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/)|Easy|Database|[SQL](./1xxx/19xx/197x/1978.md)|
 |2356|[Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/)|Easy|Database|[SQL](./2xxx/23xx/235x/2356.md)|
-  Medium  Hard  
