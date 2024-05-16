@@ -1,6 +1,7 @@
 |#|Title|Difficulty|Topics|Solution|
 |-|-|-|-|-|
 |0001|[Two Sum](https://leetcode.com/problems/two-sum/)|Easy|Array, Hash Table|[JS](./0xxx/00xx/0001.js), [TS](./0xxx/00xx/0001.ts)|
+|0121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|Array, Dynamic Programming|[JS](./0xxx/01xx/012x/0121.js), [TS](./0xxx/01xx/012x/0121.ts)|
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|Two Pointers, String|[JS](./0xxx/01xx/012x/0125.js), [TS](./0xxx/01xx/012x/0125.ts)|
 |0176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|Medium|Database|[SQL](./0xxx/01xx/017x/0176.md)|
 |0180|[Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)|Medium|Database|[SQL](./0xxx/01xx/018x/0180.md)|
