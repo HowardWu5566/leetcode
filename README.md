@@ -1,6 +1,7 @@
 |#|Title|Difficulty|Topics|Solution|
 |-|-|-|-|-|
-|0001|[Two Sum](https://leetcode.com/problems/two-sum/)|Easy|Array, Hash Table|[JS](./0xxx/00xx/0001.js), [TS](./0xxx/00xx/0001.ts)|
+|0001|[Two Sum](https://leetcode.com/problems/two-sum/)|Easy|Array, Hash Table|[JS](./0xxx/00xx/000x/0001.js), [TS](./0xxx/00xx/000x/0001.ts)|
+|0020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|String, Stack|[JS](./0xxx/00xx/002x/0020.js), [TS](./0xxx/00xx/002x/0020.ts)
 |0121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|Array, Dynamic Programming|[JS](./0xxx/01xx/012x/0121.js), [TS](./0xxx/01xx/012x/0121.ts)|
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|Two Pointers, String|[JS](./0xxx/01xx/012x/0125.js), [TS](./0xxx/01xx/012x/0125.ts)|
 |0176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|Medium|Database|[SQL](./0xxx/01xx/017x/0176.md)|
@@ -22,6 +23,7 @@
 |0619|[Biggest Single Number](https://leetcode.com/problems/biggest-single-number/)|Easy|Database|[SQL](./0xxx/06xx/061x/0619.md)|
 |0620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|Easy|Database|[SQL](./0xxx/06xx/062x/0620.md)|
 |0626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|Medium|Database|[SQL](./0xxx/06xx/062x/0626.md)|
+|0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts)
 |1045|[Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/)|Medium|Database|[SQL](./1xxx/10xx/104x/1045.md)|
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|Easy|Database|[SQL](./1xxx/10xx/106x/1068.md)|
 |1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/)|Medium|Database|[SQL](./1xxx/10xx/107x/1070.md)|
