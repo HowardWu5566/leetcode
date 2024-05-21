@@ -9,6 +9,7 @@
 |0185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)|Hard|Database|[SQL](./0xxx/01xx/018x/0185.md)|
 |0196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|Easy|Database|[SQL](./0xxx/01xx/019x/0196.md)|
 |0197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|Easy|Database|[SQL](./0xxx/01xx/019x/0197.md)|
+|0206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|Linked List, Recursion|[JS](./0xxx/02xx/020x/0206.js), [TS](./0xxx/02xx/020x/0206.ts)|
 |0217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|Array, Hash Table, Sorting|[JS](./0xxx/02xx/021x/0217.js), [TS](./0xxx/02xx/021x/0217.ts)|
 |0242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|Hash Table, String, Sorting|[JS](./0xxx/02xx/024x/0242.js), [TS](./0xxx/02xx/024x/0242.ts)|
 |0550|[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)|Medium|Database|[SQL](./0xxx/05xx/055x/0550.md)|
