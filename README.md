@@ -1,6 +1,7 @@
 |#|Title|Difficulty|Topics|Solution|
 |-|-|-|-|-|
 |0001|[Two Sum](https://leetcode.com/problems/two-sum/)|Easy|Array, Hash Table|[JS](./0xxx/00xx/000x/0001.js), [TS](./0xxx/00xx/000x/0001.ts)|
+|0003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|Hash Table, String, Sliding Window|[JS](./0xxx/00xx/000x/0003.js), [TS](./0xxx/00xx/000x/0003.ts)|
 |0020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|String, Stack|[JS](./0xxx/00xx/002x/0020.js), [TS](./0xxx/00xx/002x/0020.ts)
 |0121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|Array, Dynamic Programming|[JS](./0xxx/01xx/012x/0121.js), [TS](./0xxx/01xx/012x/0121.ts)|
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|Two Pointers, String|[JS](./0xxx/01xx/012x/0125.js), [TS](./0xxx/01xx/012x/0125.ts)|
