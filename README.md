@@ -58,6 +58,7 @@
 |1729|[Find Followers Count](https://leetcode.com/problems/find-followers-count/)|Easy|Database|[SQL](./1xxx/17xx/172x/1729.md)|
 |1731|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/)|Easy|Database|[SQL](./1xxx/17xx/173x/1731.md)|
 |1757|[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)|Easy|Database|[SQL](./1xxx/17xx/175x/1757.md)|
+|1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|Easy|Two Pointers, String|[JS](./1xxx//17xx/176x/1768.js), [TS](./1xxx/17xx/176x/1768.ts)
 |1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/)|Easy|Database|[SQL](./1xxx/17xx/178x/1789.md)|
 |1907|[Count Salary Categories](https://leetcode.com/problems/count-salary-categories/)|Medium|Database|[SQL](./1xxx/19xx/190x/1907.md)|
 |1934|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/)|Medium|Database|[SQL](./1xxx/19xx/193x/1934.md)|
