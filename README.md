@@ -65,3 +65,4 @@
 |1934|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/)|Medium|Database|[SQL](./1xxx/19xx/193x/1934.md)|
 |1978|[Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/)|Easy|Database|[SQL](./1xxx/19xx/197x/1978.md)|
 |2356|[Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/)|Easy|Database|[SQL](./2xxx/23xx/235x/2356.md)|
+|3110|[Score of a String](https://leetcode.com/problems/score-of-a-string/)|Easy|String|[JS](./3xxx/31xx/311x/3110.js), [TS](./3xxx/31xx/311x/3110.ts)|
