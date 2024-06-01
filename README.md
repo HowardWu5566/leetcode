@@ -33,6 +33,7 @@
 |1045|[Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/)|Medium|Database|[SQL](./1xxx/10xx/104x/1045.md)|
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|Easy|Database|[SQL](./1xxx/10xx/106x/1068.md)|
 |1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/)|Medium|Database|[SQL](./1xxx/10xx/107x/1070.md)|
+|1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|Easy|Math, String|[JS](./1xxx/10xx/107x/1071.js), [TS](./1xxx/10xx/107x/1071.ts)|
 |1075|[Project Employees I](https://leetcode.com/problems/project-employees-i/)|Easy|Database|[SQL](./1xxx/10xx/107x/1075.md)|
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1141.md)|
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1148.md)|
