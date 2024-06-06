@@ -33,6 +33,7 @@
 |0620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|Easy|Database|[SQL](./0xxx/06xx/062x/0620.md)|
 |0626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|Medium|Database|[SQL](./0xxx/06xx/062x/0626.md)|
 |0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts)
+|0846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)|Medium|Array, Hash Table, Greedy, Sorting|[JS](./0xxx/08xx/084x/0846.js), [TS](./0xxx/08xx/084x/0846.ts)|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|Easy|Array, Hash Table, String|[JS](./1xxx/10xx/100x/1002.js), [TS](./1xxx/10xx/100x/1002.ts)|
 |1045|[Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/)|Medium|Database|[SQL](./1xxx/10xx/104x/1045.md)|
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|Easy|Database|[SQL](./1xxx/10xx/106x/1068.md)|
