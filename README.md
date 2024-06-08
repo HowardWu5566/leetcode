@@ -20,6 +20,7 @@
 |0260|[Single Number III](https://leetcode.com/problems/single-number-iii/)|Medium|Array, Bit Manipulation|[JS](./0xxx/02xx/026x/0260.js), [TS](./0xxx/02xx/026x/0260.ts)|
 |0344|[Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|Two Pointers, String|[JS](./0xxx/03xx/034x/0344.js), [TS](./0xxx/03xx/034x/0344.ts)|
 |0409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|Easy|Hash Table, String, Greedy|[JS](./0xxx/04xx/040x/0409.js), [TS](./0xxx/04xx/040x/0409.ts)|
+|0523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|Medium|Array, Hash Table, Math, Prefix Sum|[JS](./0xxx/05xx/052x/0523.js), [TS](./0xxx/05xx/052x/0523.ts)|
 |0550|[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)|Medium|Database|[SQL](./0xxx/05xx/055x/0550.md)|
 |0570|[Managers with at Least 5 Direct Reports](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/)|Medium|Database|[SQL](./0xxx/05xx/057x/0570.md)|
 |0577|[Employee Bonus](https://leetcode.com/problems/employee-bonus/)|Easy|Database|[SQL](./0xxx/05xx/057x/0577.md)|
