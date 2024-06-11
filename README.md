@@ -43,6 +43,7 @@
 |1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/)|Medium|Database|[SQL](./1xxx/10xx/107x/1070.md)|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|Easy|Math, String|[JS](./1xxx/10xx/107x/1071.js), [TS](./1xxx/10xx/107x/1071.ts)|
 |1075|[Project Employees I](https://leetcode.com/problems/project-employees-i/)|Easy|Database|[SQL](./1xxx/10xx/107x/1075.md)|
+|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|Easy|Array, Hash Table, Sorting, Counting Sort|[JS](./1xxx/11xx/112x/1122.js), [TS](./1xxx/11xx/112x/1122.ts)
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1141.md)|
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1148.md)|
 |1164|[Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/)|Medium|Database|[SQL](./1xxx/11xx/116x/1164.md)|
