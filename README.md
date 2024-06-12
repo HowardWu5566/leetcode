@@ -5,7 +5,8 @@
 |0009|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)|Easy|Math|[JS](./0xxx/00xx/000x/0009.js), [TS](./0xxx/00xx/000x/0009.ts)|
 |0015|[3Sum](https://leetcode.com/problems/3sum/)|Medium|Array, Two Pointers, Sorting|[JS](./0xxx/00xx/001x/0015.js), [TS](./0xxx/00xx/001x/0015.ts)|
 |0018|[4Sum](https://leetcode.com/problems/4sum/)|Medium|Array, Two Pointers, Sorting|[JS](./0xxx/00xx/001x/0018.js), [TS](./0xxx/00xx/001x/0018.ts)|
-|0020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|String, Stack|[JS](./0xxx/00xx/002x/0020.js), [TS](./0xxx/00xx/002x/0020.ts)
+|0020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|Easy|String, Stack|[JS](./0xxx/00xx/002x/0020.js), [TS](./0xxx/00xx/002x/0020.ts)|
+|0075|[Sort Colors](https://leetcode.com/problems/sort-colors/)|Medium|Array, Two Pointers, Sorting|[JS](./0xxx/00xx/007x/0075.js), [TS](./0xxx/00xx/007x/0075.ts)|
 |0121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|Array, Dynamic Programming|[JS](./0xxx/01xx/012x/0121.js), [TS](./0xxx/01xx/012x/0121.ts)|
 |0125|[Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|Two Pointers, String|[JS](./0xxx/01xx/012x/0125.js), [TS](./0xxx/01xx/012x/0125.ts)|
 |0176|[Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)|Medium|Database|[SQL](./0xxx/01xx/017x/0176.md)|
@@ -34,7 +35,7 @@
 |0620|[Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)|Easy|Database|[SQL](./0xxx/06xx/062x/0620.md)|
 |0626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|Medium|Database|[SQL](./0xxx/06xx/062x/0626.md)|
 |0648|[Replace Words](https://leetcode.com/problems/replace-words/)|Medium|Array, Hash Table, String, Trie|[JS](./0xxx/06xx/064x/0648.js), [TS](./0xxx/06xx/064x/0648.ts)|
-|0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts)
+|0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts)|
 |0846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)|Medium|Array, Hash Table, Greedy, Sorting|[JS](./0xxx/08xx/084x/0846.js), [TS](./0xxx/08xx/084x/0846.ts)|
 |0974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)|Medium|Array, Hash Table, Prefix Sum|[JS](./0xxx/09xx/097x/0974.js), [TS](./0xxx/09xx/097x/0974.ts)|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|Easy|Array, Hash Table, String|[JS](./1xxx/10xx/100x/1002.js), [TS](./1xxx/10xx/100x/1002.ts)|
@@ -44,7 +45,7 @@
 |1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/)|Medium|Database|[SQL](./1xxx/10xx/107x/1070.md)|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|Easy|Math, String|[JS](./1xxx/10xx/107x/1071.js), [TS](./1xxx/10xx/107x/1071.ts)|
 |1075|[Project Employees I](https://leetcode.com/problems/project-employees-i/)|Easy|Database|[SQL](./1xxx/10xx/107x/1075.md)|
-|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|Easy|Array, Hash Table, Sorting, Counting Sort|[JS](./1xxx/11xx/112x/1122.js), [TS](./1xxx/11xx/112x/1122.ts)
+|1122|[Relative Sort Array](https://leetcode.com/problems/relative-sort-array/)|Easy|Array, Hash Table, Sorting, Counting Sort|[JS](./1xxx/11xx/112x/1122.js), [TS](./1xxx/11xx/112x/1122.ts)|
 |1141|[User Activity for the Past 30 Days I](https://leetcode.com/problems/user-activity-for-the-past-30-days-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1141.md)|
 |1148|[Article Views I](https://leetcode.com/problems/article-views-i/)|Easy|Database|[SQL](./1xxx/11xx/114x/1148.md)|
 |1164|[Product Price at a Given Date](https://leetcode.com/problems/product-price-at-a-given-date/)|Medium|Database|[SQL](./1xxx/11xx/116x/1164.md)|
@@ -69,7 +70,7 @@
 |1729|[Find Followers Count](https://leetcode.com/problems/find-followers-count/)|Easy|Database|[SQL](./1xxx/17xx/172x/1729.md)|
 |1731|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/)|Easy|Database|[SQL](./1xxx/17xx/173x/1731.md)|
 |1757|[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)|Easy|Database|[SQL](./1xxx/17xx/175x/1757.md)|
-|1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|Easy|Two Pointers, String|[JS](./1xxx//17xx/176x/1768.js), [TS](./1xxx/17xx/176x/1768.ts)
+|1768|[Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)|Easy|Two Pointers, String|[JS](./1xxx//17xx/176x/1768.js), [TS](./1xxx/17xx/176x/1768.ts)|
 |1789|[Primary Department for Each Employee](https://leetcode.com/problems/primary-department-for-each-employee/)|Easy|Database|[SQL](./1xxx/17xx/178x/1789.md)|
 |1907|[Count Salary Categories](https://leetcode.com/problems/count-salary-categories/)|Medium|Database|[SQL](./1xxx/19xx/190x/1907.md)|
 |1934|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/)|Medium|Database|[SQL](./1xxx/19xx/193x/1934.md)|
