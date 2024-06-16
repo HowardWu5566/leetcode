@@ -19,6 +19,7 @@
 |0219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|Easy|Array, Hash Table, Sliding Window|[JS](./0xxx/02xx/021x/0219.js), [TS](./0xxx/02xx/021x/0219.ts)|
 |0242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|Hash Table, String, Sorting|[JS](./0xxx/02xx/024x/0242.js), [TS](./0xxx/02xx/024x/0242.ts)|
 |0260|[Single Number III](https://leetcode.com/problems/single-number-iii/)|Medium|Array, Bit Manipulation|[JS](./0xxx/02xx/026x/0260.js), [TS](./0xxx/02xx/026x/0260.ts)|
+|0330|[Patching Array](https://leetcode.com/problems/patching-array/)|Hard|Array, Greedy|[JS](./0xxx/03xx/033X/0330.js), [TS](./0xxx/03xx/033X/0330.ts)|
 |0344|[Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|Two Pointers, String|[JS](./0xxx/03xx/034x/0344.js), [TS](./0xxx/03xx/034x/0344.ts)|
 |0409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|Easy|Hash Table, String, Greedy|[JS](./0xxx/04xx/040x/0409.js), [TS](./0xxx/04xx/040x/0409.ts)|
 |0502|[IPO](https://leetcode.com/problems/ipo/)|Hard|Array, Greedy, Sorting, Heap (Priority Queue)|[JS](./0xxx/05xx/050x/0502.js), [TS](./0xxx/05xx/050x/0502.ts)|
