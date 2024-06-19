@@ -64,6 +64,7 @@
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|Easy|Database|[SQL](./1xxx/13xx/132x/1327.md)|
 |1341|[Movie Rating](https://leetcode.com/problems/movie-rating/)|Medium|Database|[SQL](./1xxx//13xx/134x/1341.md)|
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|Easy|Database|[SQL](./1xxx/13xx/137x/1378.md)|
+|1482|[Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)|Medium|Array, Binary Search|[JS](./1xxx/14xx/148x/1482.js), [TS](./1xxx/14xx/148x/1482.ts)|
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|Easy|Database|[SQL](./1xxx/14xx/148x/1484.md)|
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|Easy|Database|[SQL](./1xxx/15xx/151x/1517.md)|
 |1527|[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)|Easy|Database|[SQL](./1xxx/15xx/152x/1527.md)|
