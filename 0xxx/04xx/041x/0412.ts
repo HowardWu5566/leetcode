@@ -1,0 +1,17 @@
+function fizzBuzz(n: number): string[] {
+  const result: string[] = []
+
+  for (let i = 1; i <= n; i++) {
+    if (!(i % 15)) {
+      result.push('FizzBuzz')
+    } else if (!(i % 3)) {
+      result.push('Fizz')
+    } else if (!(i % 5)) {
+      result.push('Buzz')
+    } else {
+      result.push(i.toString())
+    }
+  }
+
+  return result
+}
