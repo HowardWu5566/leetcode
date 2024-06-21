@@ -47,6 +47,7 @@
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|Easy|Array, Hash Table, String|[JS](./1xxx/10xx/100x/1002.js), [TS](./1xxx/10xx/100x/1002.ts)|
 |1045|[Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/)|Medium|Database|[SQL](./1xxx/10xx/104x/1045.md)|
 |1051|[Height Checker](https://leetcode.com/problems/height-checker/)|Easy|Array, Sorting, Counting Sort|[JS](./1xxx/10xx/105x/1051.js), [TS](./1xxx/10xx/105x/1051.ts)|
+|1052|[Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/)|Medium|Array, Sliding Window|[JS](./1xxx/10xx/105x/1052.js), [TS](./1xxx/10xx/105x/1052.ts)|
 |1068|[Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i/)|Easy|Database|[SQL](./1xxx/10xx/106x/1068.md)|
 |1070|[Product Sales Analysis III](https://leetcode.com/problems/product-sales-analysis-iii/)|Medium|Database|[SQL](./1xxx/10xx/107x/1070.md)|
 |1071|[Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)|Easy|Math, String|[JS](./1xxx/10xx/107x/1071.js), [TS](./1xxx/10xx/107x/1071.ts)|
