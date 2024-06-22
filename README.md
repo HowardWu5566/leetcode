@@ -60,6 +60,7 @@
 |1193|[Monthly Transactions I](https://leetcode.com/problems/monthly-transactions-i/)|Medium|Database|[SQL](./1xxx/11xx/119x/1193.md)|
 |1204|[Last Person to Fit in the Bus](https://leetcode.com/problems/last-person-to-fit-in-the-bus/)|Medium|Database|[SQL](./1xxx/12xx/120x/1204.md)|
 |1211|[Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/)|Easy|Database|[SQL](./1xxx/12xx/121x/1211.md)|
+|1248|[Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/)|Medium|Array, Hash Table, Math, Sliding Window|[JS](./1xxx/12xx/124x/1248.js), [TS](./1xxx/12xx/124x/1248.ts)|
 |1251|[Average Selling Price](https://leetcode.com/problems/average-selling-price/)|Easy|Database|[SQL](./1xxx/12xx/125x/1251.md)|
 |1280|[Students and Examinations](https://leetcode.com/problems/students-and-examinations/)|Easy|Database|[SQL](./1xxx/12xx/128x/1280.md)|
 |1321|[Restaurant Growth](https://leetcode.com/problems/restaurant-growth/)|Medium|Database|[SQL](./1xxx/13xx/132x/1321.md)|
