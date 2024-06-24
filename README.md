@@ -44,6 +44,7 @@
 |0846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)|Medium|Array, Hash Table, Greedy, Sorting|[JS](./0xxx/08xx/084x/0846.js), [TS](./0xxx/08xx/084x/0846.ts)|
 |0945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)|Medium|Array, Greedy, Sorting, Counting|[JS](./0xxx/09xx/094x/0945.js), [TS](./0xxx/09xx/094x/0945.ts)|
 |0974|[Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)|Medium|Array, Hash Table, Prefix Sum|[JS](./0xxx/09xx/097x/0974.js), [TS](./0xxx/09xx/097x/0974.ts)|
+|0995|[Minimum Number of K Consecutive Bit Flips](https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/)|Hard|Array, Bit Manipulation, Queue, Sliding Window, Prefix Sum|[JS](./0xxx/09xx/099x/0995.js), [TS](./0xxx/09xx/099x/0995.ts)|
 |1002|[Find Common Characters](https://leetcode.com/problems/find-common-characters/)|Easy|Array, Hash Table, String|[JS](./1xxx/10xx/100x/1002.js), [TS](./1xxx/10xx/100x/1002.ts)|
 |1045|[Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products/)|Medium|Database|[SQL](./1xxx/10xx/104x/1045.md)|
 |1051|[Height Checker](https://leetcode.com/problems/height-checker/)|Easy|Array, Sorting, Counting Sort|[JS](./1xxx/10xx/105x/1051.js), [TS](./1xxx/10xx/105x/1051.ts)|
