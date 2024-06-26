@@ -69,6 +69,7 @@
 |1327|[List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/)|Easy|Database|[SQL](./1xxx/13xx/132x/1327.md)|
 |1341|[Movie Rating](https://leetcode.com/problems/movie-rating/)|Medium|Database|[SQL](./1xxx//13xx/134x/1341.md)|
 |1378|[Replace Employee ID With The Unique Identifier](https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/)|Easy|Database|[SQL](./1xxx/13xx/137x/1378.md)|
+|1382|[Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/)|Divide and Conquer, Greedy, Tree, Depth-First Search, Binary Search Tree, Binary Tree|Medium|[JS](./1xxx/13xx/138x/1382.js), [TS](./1xxx/13xx/138x/1382.ts)|
 |1438|[Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)|Medium|Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue|[JS](./1xxx/14xx/143x/1438.js), [TS](./1xxx/14xx/143x/1438.ts)|
 |1482|[Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)|Medium|Array, Binary Search|[JS](./1xxx/14xx/148x/1482.js), [TS](./1xxx/14xx/148x/1482.ts)|
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|Easy|Database|[SQL](./1xxx/14xx/148x/1484.md)|
