@@ -91,6 +91,7 @@
 |1934|[Confirmation Rate](https://leetcode.com/problems/confirmation-rate/)|Medium|Database|[SQL](./1xxx/19xx/193x/1934.md)|
 |1978|[Employees Whose Manager Left the Company](https://leetcode.com/problems/employees-whose-manager-left-the-company/)|Easy|Database|[SQL](./1xxx/19xx/197x/1978.md)|
 |2037|[Minimum Number of Moves to Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/)|Easy|Array, Greedy, Sorting|[JS](./2xxx/20xx/203x/2037.js), [TS](./2xxx/20xx/203x/2037.ts)|
+|2285|[Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)|Medium|Greedy, Graph, Sorting, Heap (Priority Queue)|[JS](./2xxx/22xx/228x/2285.js), [TS](./2xxx/22xx/228x/2285.ts)|
 |2356|[Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/)|Easy|Database|[SQL](./2xxx/23xx/235x/2356.md)|
 |2486|[Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)|Medium|Two Pointers, String, Greedy|[JS](./2xxx/24xx/248x/2486.js), [TS](./2xxx/24xx/248x/2486.ts)|
 |3110|[Score of a String](https://leetcode.com/problems/score-of-a-string/)|Easy|String|[JS](./3xxx/31xx/311x/3110.js), [TS](./3xxx/31xx/311x/3110.ts)|
