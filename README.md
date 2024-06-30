@@ -76,6 +76,7 @@
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|Easy|Database|[SQL](./1xxx/15xx/151x/1517.md)|
 |1527|[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)|Easy|Database|[SQL](./1xxx/15xx/152x/1527.md)|
 |1552|[Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)|Medium|Array, Binary Search, Sorting|[JS](./1xxx/15xx/155x/1552.js), [TS](./1xxx/15xx/155x/1552.ts)|
+|1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)|Hard|Union Find, Graph|[JS](./1xxx/15xx/157x/1579.js), [TS](./1xxx/15xx/157x/1579.ts)|
 |1581|[Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)|Easy|Database|[SQL](./1xxx/15xx/158x/1581.md)|
 |1633|[Percentage of Users Attended a Contest](https://leetcode.com/problems/percentage-of-users-attended-a-contest/)|Easy|Database|[SQL](./1xxx/16xx/163x/1633.md)|
 |1661|[Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/)|Easy|Database|[SQL](./1xxx/16xx/166x/1661.md)|
