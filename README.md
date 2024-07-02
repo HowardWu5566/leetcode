@@ -73,6 +73,7 @@
 |1438|[Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/)|Medium|Array, Queue, Sliding Window, Heap (Priority Queue), Ordered Set, Monotonic Queue|[JS](./1xxx/14xx/143x/1438.js), [TS](./1xxx/14xx/143x/1438.ts)|
 |1482|[Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/)|Medium|Array, Binary Search|[JS](./1xxx/14xx/148x/1482.js), [TS](./1xxx/14xx/148x/1482.ts)|
 |1484|[Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/)|Easy|Database|[SQL](./1xxx/14xx/148x/1484.md)|
+|1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/)|Easy|Array|[JS](./1xxx/15xx/155x/1550.js), [TS](./1xxx/15xx/155x/1550.ts)|
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|Easy|Database|[SQL](./1xxx/15xx/151x/1517.md)|
 |1527|[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)|Easy|Database|[SQL](./1xxx/15xx/152x/1527.md)|
 |1552|[Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)|Medium|Array, Binary Search, Sorting|[JS](./1xxx/15xx/155x/1552.js), [TS](./1xxx/15xx/155x/1552.ts)|
