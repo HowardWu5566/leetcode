@@ -99,5 +99,6 @@
 |2285|[Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/)|Medium|Greedy, Graph, Sorting, Heap (Priority Queue)|[JS](./2xxx/22xx/228x/2285.js), [TS](./2xxx/22xx/228x/2285.ts)|
 |2356|[Number of Unique Subjects Taught by Each Teacher](https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/)|Easy|Database|[SQL](./2xxx/23xx/235x/2356.md)|
 |2486|[Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)|Medium|Two Pointers, String, Greedy|[JS](./2xxx/24xx/248x/2486.js), [TS](./2xxx/24xx/248x/2486.ts)|
+|2620|[Counter](https://leetcode.com/problems/counter/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/262x/2620.js), [TS](./2xxx/26xx/262x/2620.ts)|
 |2667|[Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2667.js), [TS](./2xxx/26xx/266x/2667.ts)|
 |3110|[Score of a String](https://leetcode.com/problems/score-of-a-string/)|Easy|String|[JS](./3xxx/31xx/311x/3110.js), [TS](./3xxx/31xx/311x/3110.ts)|
