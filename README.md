@@ -101,6 +101,7 @@
 |2486|[Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)|Medium|Two Pointers, String, Greedy|[JS](./2xxx/24xx/248x/2486.js), [TS](./2xxx/24xx/248x/2486.ts)|
 |2582|[Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/)|Easy|Math, Simulation|[JS](./2xxx/25xx/258x/2582.js), [TS](./2xxx/25xx/258x/2582.ts)|
 |2620|[Counter](https://leetcode.com/problems/counter/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/262x/2620.js), [TS](./2xxx/26xx/262x/2620.ts)|
+|2626|[Array Reduce Transformation](https://leetcode.com/problems/array-reduce-transformation/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/262x/2626.js), [TS](./2xxx/26xx/262x/2626.ts)|
 |2634|[Filter Elements from Array](https://leetcode.com/problems/filter-elements-from-array/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/263x/2634.js), [TS](./2xxx/26xx/263x/2634.ts)|
 |2635|[Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/263x/2635.js), [TS](./2xxx/26xx/263x/2635.ts)|
 |2665|[Counter II](https://leetcode.com/problems/counter-ii/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2665.js), [TS](./2xxx/26xx/266x/2665.ts)|
