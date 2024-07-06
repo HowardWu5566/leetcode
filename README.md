@@ -101,6 +101,7 @@
 |2486|[Append Characters to String to Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/)|Medium|Two Pointers, String, Greedy|[JS](./2xxx/24xx/248x/2486.js), [TS](./2xxx/24xx/248x/2486.ts)|
 |2582|[Pass the Pillow](https://leetcode.com/problems/pass-the-pillow/)|Easy|Math, Simulation|[JS](./2xxx/25xx/258x/2582.js), [TS](./2xxx/25xx/258x/2582.ts)|
 |2620|[Counter](https://leetcode.com/problems/counter/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/262x/2620.js), [TS](./2xxx/26xx/262x/2620.ts)|
+|2665|[Counter II](https://leetcode.com/problems/counter-ii/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2665.js), [TS](./2xxx/26xx/266x/2665.ts)|
 |2667|[Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2667.js), [TS](./2xxx/26xx/266x/2667.ts)|
 |2704|[To Be Or Not To Be](https://leetcode.com/problems/to-be-or-not-to-be/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/27xx/270x/2704.js),[TS](./2xxx/27xx/270x/2704.ts)|
 |3110|[Score of a String](https://leetcode.com/problems/score-of-a-string/)|Easy|String|[JS](./3xxx/31xx/311x/3110.js), [TS](./3xxx/31xx/311x/3110.ts)|
