@@ -77,6 +77,7 @@
 |1509|[Minimum Difference Between Largest and Smallest Value in Three Moves](https://leetcode.com/problems/minimum-difference-between-largest-and-smallest-value-in-three-moves/)|Medium|Array, Greedy, Sorting|[JS](./1xxx/15xx/150x/1509.js), [TS](./1xxx/15xx/150x/1509.ts)|
 |1550|[Three Consecutive Odds](https://leetcode.com/problems/three-consecutive-odds/)|Easy|Array|[JS](./1xxx/15xx/155x/1550.js), [TS](./1xxx/15xx/155x/1550.ts)|
 |1517|[Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/)|Easy|Database|[SQL](./1xxx/15xx/151x/1517.md)|
+|1518|[Water Bottles](https://leetcode.com/problems/water-bottles/)|Easy|Math, Simulation|[JS](./1xxx/15xx/151x/1518.js), [TS](./1xxx/15xx/151x/1518.ts)|
 |1527|[Patients With a Condition](https://leetcode.com/problems/patients-with-a-condition/)|Easy|Database|[SQL](./1xxx/15xx/152x/1527.md)|
 |1552|[Magnetic Force Between Two Balls](https://leetcode.com/problems/magnetic-force-between-two-balls/)|Medium|Array, Binary Search, Sorting|[JS](./1xxx/15xx/155x/1552.js), [TS](./1xxx/15xx/155x/1552.ts)|
 |1579|[Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/)|Hard|Union Find, Graph|[JS](./1xxx/15xx/157x/1579.js), [TS](./1xxx/15xx/157x/1579.ts)|
