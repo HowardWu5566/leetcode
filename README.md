@@ -108,5 +108,6 @@
 |2635|[Apply Transform Over Each Element in Array](https://leetcode.com/problems/apply-transform-over-each-element-in-array/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/263x/2635.js), [TS](./2xxx/26xx/263x/2635.ts)|
 |2665|[Counter II](https://leetcode.com/problems/counter-ii/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2665.js), [TS](./2xxx/26xx/266x/2665.ts)|
 |2667|[Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/26xx/266x/2667.js), [TS](./2xxx/26xx/266x/2667.ts)|
+|2703|[Return Length of Arguments Passed](https://leetcode.com/problems/return-length-of-arguments-passed/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/27xx/270x/2703.js), [TS](./2xxx/27xx/270x/2703.ts)|
 |2704|[To Be Or Not To Be](https://leetcode.com/problems/to-be-or-not-to-be/)|Easy|**<font color=#ff00ff>JS30</font>**|[JS](./2xxx/27xx/270x/2704.js),[TS](./2xxx/27xx/270x/2704.ts)|
 |3110|[Score of a String](https://leetcode.com/problems/score-of-a-string/)|Easy|String|[JS](./3xxx/31xx/311x/3110.js), [TS](./3xxx/31xx/311x/3110.ts)|
