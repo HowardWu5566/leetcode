@@ -86,6 +86,7 @@
 |1661|[Average Time of Process per Machine](https://leetcode.com/problems/average-time-of-process-per-machine/)|Easy|Database|[SQL](./1xxx/16xx/166x/1661.md)|
 |1667|[Fix Names in a Table](https://leetcode.com/problems/fix-names-in-a-table/)|Easy|Database|[SQL](./1xxx/16xx/166x/1667.md)|
 |1683|[Invalid Tweets](https://leetcode.com/problems/invalid-tweets/)|Easy|Database|[SQL](./1xxx/16xx/168x/1683.md)|
+|1701|[Average Waiting Time](https://leetcode.com/problems/average-waiting-time/)|Medium|Array, Simulation|[JS](./1xxx/17xx/170x/1701.js), [TS](./1xxx/17xx/170x/1701.ts)|
 |1729|[Find Followers Count](https://leetcode.com/problems/find-followers-count/)|Easy|Database|[SQL](./1xxx/17xx/172x/1729.md)|
 |1731|[The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/)|Easy|Database|[SQL](./1xxx/17xx/173x/1731.md)|
 |1757|[Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)|Easy|Database|[SQL](./1xxx/17xx/175x/1757.md)|
