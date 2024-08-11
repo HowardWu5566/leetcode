@@ -14,10 +14,10 @@
 |0185|[Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)|Hard|Database|[SQL](./0xxx/01xx/018x/0185.md)|
 |0196|[Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)|Easy|Database|[SQL](./0xxx/01xx/019x/0196.md)|
 |0197|[Rising Temperature](https://leetcode.com/problems/rising-temperature/)|Easy|Database|[SQL](./0xxx/01xx/019x/0197.md)|
-|0206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|Linked List, Recursion|[JS](./0xxx/02xx/020x/0206.js), [TS](./0xxx/02xx/020x/0206.ts)|
-|0217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|Array, Hash Table, Sorting|[JS](./0xxx/02xx/021x/0217.js), [TS](./0xxx/02xx/021x/0217.ts)|
-|0219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|Easy|Array, Hash Table, Sliding Window|[JS](./0xxx/02xx/021x/0219.js), [TS](./0xxx/02xx/021x/0219.ts)|
-|0242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|Hash Table, String, Sorting|[JS](./0xxx/02xx/024x/0242.js), [TS](./0xxx/02xx/024x/0242.ts)|
+|0206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|Easy|Linked List, Recursion|[JS](./0xxx/02xx/020x/0206.js), [TS](./0xxx/02xx/020x/0206.ts), [Python](./0xxx/02xx/020x/0206.py)|
+|0217|[Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)|Easy|Array, Hash Table, Sorting|[JS](./0xxx/02xx/021x/0217.js), [TS](./0xxx/02xx/021x/0217.ts), [Python](./0xxx/02xx/021x/0217.py)|
+|0219|[Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)|Easy|Array, Hash Table, Sliding Window|[JS](./0xxx/02xx/021x/0219.js), [TS](./0xxx/02xx/021x/0219.ts), [Python](./0xxx/02xx/021x/0219.py)|
+|0242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|Hash Table, String, Sorting|[JS](./0xxx/02xx/024x/0242.js), [TS](./0xxx/02xx/024x/0242.ts), [Python](./0xxx/02xx/024x/0242.py)|
 |0260|[Single Number III](https://leetcode.com/problems/single-number-iii/)|Medium|Array, Bit Manipulation|[JS](./0xxx/02xx/026x/0260.js), [TS](./0xxx/02xx/026x/0260.ts)|
 |0330|[Patching Array](https://leetcode.com/problems/patching-array/)|Hard|Array, Greedy|[JS](./0xxx/03xx/033X/0330.js), [TS](./0xxx/03xx/033X/0330.ts)|
 |0344|[Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|Two Pointers, String|[JS](./0xxx/03xx/034x/0344.js), [TS](./0xxx/03xx/034x/0344.ts)|
