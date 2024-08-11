@@ -20,10 +20,10 @@
 |0242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)|Easy|Hash Table, String, Sorting|[JS](./0xxx/02xx/024x/0242.js), [TS](./0xxx/02xx/024x/0242.ts), [Python](./0xxx/02xx/024x/0242.py)|
 |0260|[Single Number III](https://leetcode.com/problems/single-number-iii/)|Medium|Array, Bit Manipulation|[JS](./0xxx/02xx/026x/0260.js), [TS](./0xxx/02xx/026x/0260.ts)|
 |0330|[Patching Array](https://leetcode.com/problems/patching-array/)|Hard|Array, Greedy|[JS](./0xxx/03xx/033X/0330.js), [TS](./0xxx/03xx/033X/0330.ts)|
-|0344|[Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|Two Pointers, String|[JS](./0xxx/03xx/034x/0344.js), [TS](./0xxx/03xx/034x/0344.ts)|
-|0350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|Easy|Array, Hash Table, Two Pointers, Binary Search, Sorting|[JS](./0xxx/03xx/035x/0350.js), [TS](./0xxx/03xx/035x/0350.ts)|
-|0409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|Easy|Hash Table, String, Greedy|[JS](./0xxx/04xx/040x/0409.js), [TS](./0xxx/04xx/040x/0409.ts)|
-|0412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|Math, String, Simulation|[JS](./0xxx/04xx/041x/0412.js), [TS](./0xxx/04xx/041x/0412.ts)|
+|0344|[Reverse String](https://leetcode.com/problems/reverse-string/)|Easy|Two Pointers, String|[JS](./0xxx/03xx/034x/0344.js), [TS](./0xxx/03xx/034x/0344.ts), [Python](./0xxx/03xx/034x/0344.py)|
+|0350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|Easy|Array, Hash Table, Two Pointers, Binary Search, Sorting|[JS](./0xxx/03xx/035x/0350.js), [TS](./0xxx/03xx/035x/0350.ts), [Python](./0xxx/03xx/035x/0350.py)|
+|0409|[Longest Palindrome](https://leetcode.com/problems/longest-palindrome/)|Easy|Hash Table, String, Greedy|[JS](./0xxx/04xx/040x/0409.js), [TS](./0xxx/04xx/040x/0409.ts), [Python](./0xxx/04xx/040x/0409.py)|
+|0412|[Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)|Easy|Math, String, Simulation|[JS](./0xxx/04xx/041x/0412.js), [TS](./0xxx/04xx/041x/0412.ts), [Python](./0xxx/04xx/041x/0412.py)|
 |0502|[IPO](https://leetcode.com/problems/ipo/)|Hard|Array, Greedy, Sorting, Heap (Priority Queue)|[JS](./0xxx/05xx/050x/0502.js), [TS](./0xxx/05xx/050x/0502.ts)|
 |0523|[Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)|Medium|Array, Hash Table, Math, Prefix Sum|[JS](./0xxx/05xx/052x/0523.js), [TS](./0xxx/05xx/052x/0523.ts)|
 |0550|[Game Play Analysis IV](https://leetcode.com/problems/game-play-analysis-iv/)|Medium|Database|[SQL](./0xxx/05xx/055x/0550.md)|
@@ -40,7 +40,7 @@
 |0626|[Exchange Seats](https://leetcode.com/problems/exchange-seats/)|Medium|Database|[SQL](./0xxx/06xx/062x/0626.md)|
 |0633|[Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/)|Medium|Math, Two Pointers, Binary Search|[JS](./0xxx/06xx/063X/0633.js), [TS](./0xxx/06xx/063X/0633.ts)|
 |0648|[Replace Words](https://leetcode.com/problems/replace-words/)|Medium|Array, Hash Table, String, Trie|[JS](./0xxx/06xx/064x/0648.js), [TS](./0xxx/06xx/064x/0648.ts)|
-|0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts)|
+|0704|[Binary Search](https://leetcode.com/problems/binary-search/)|Easy|Array, Binary Search|[JS](./0xxx/07xx/070x/0704.js), [TS](./0xxx/07xx/070x/0704.ts), [Python](./0xxx/07xx/070x/0704.py)|
 |0826|[Most Profit Assigning Work](https://leetcode.com/problems/most-profit-assigning-work/)|Medium|Array, Two Pointers, Binary Search, Greedy, Sorting|[JS](./0xxx/08xx/082x/0826.js), [TS](./0xxx/08xx/082x/0826.ts)|
 |0846|[Hand of Straights](https://leetcode.com/problems/hand-of-straights/)|Medium|Array, Hash Table, Greedy, Sorting|[JS](./0xxx/08xx/084x/0846.js), [TS](./0xxx/08xx/084x/0846.ts)|
 |0945|[Minimum Increment to Make Array Unique](https://leetcode.com/problems/minimum-increment-to-make-array-unique/)|Medium|Array, Greedy, Sorting, Counting|[JS](./0xxx/09xx/094x/0945.js), [TS](./0xxx/09xx/094x/0945.ts)|
